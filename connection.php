@@ -13,11 +13,11 @@ $conn = mysqli_connect($db_host, $db_user, $db_password,$db_name);
 
 if($conn)
 {
-	echo "database connection done!!!";
+	echo"";
+	//echo "<script>alert('database connection done!!!')</script>";
 
 }
 else
 {
-		echo "database connection failed!!!";
-
+echo "<script>alert('database connection Failed!!!')</script>";
 }

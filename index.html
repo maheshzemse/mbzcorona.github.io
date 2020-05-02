@@ -6,6 +6,7 @@
   <!--<link rel="stylesheet" type="text/css" href="connection.php">   -->
   <link rel="stylesheet" type="text/css" href="form.php">
 
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -15,6 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+ 
 
 
 </head>
@@ -23,7 +25,7 @@
 
    <nav class="navbar navbar-expand-lg nav_style fixed-top text-center">
   <a class="navbar-brand pl-5" href="#">covid-19</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -81,30 +83,90 @@
 <!--******************************corona updates************---->
 
 
-<section class="corona_update">
+<section class="register">
 
   <div class="mb-3 ">
-    <h3 class="text-uppercase text-center">covid-19 updates</h3>
+    <h3 class="text-uppercase text-center">Registration</h3>
   </div>
 
-    <div class=" d-flex justify-content-around align-items-center mt-5 pl-2">
-      <div>
-        <h1 class="count">1,524,266</h1>
-        <p>Passenger screen at airport</p>
-      </div>
+    <div class=" d-flex justify-content-around align-items-center mt-5 mb-4 ">
+      
+        <div>
+        <a  class="btn btn-primary" href="register.php" >1.Patient Registration</a>
+        </div>
+        <div>
+        <a  class="btn btn-primary" href="login.php" data-toggle="modal" data-target="#exampleModal" >2.Patient Login</a>
 
-       <div>
-        <h1 class="count">512</h1>
-        <p>Active COVID-19 cases</p>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-       <div>
-        <h1 class="count">40</h1>
-        <p>Discharged cases</p>
+      <div class="modal-body">
+        <form method="POST" action="login.php" >
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Username</label>
+            <input type="text" class="form-control"name="username">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Password</label>
+            <input type="password" class="form-control"name="password">
+
+          </div>
+          <input type="submit" name="submit" value="Login" class="btn btn-primary">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </form>
       </div>
-       <div>
-        <h1 class="count">9</h1>
-        <p>Death cases</p>
+      <div class="modal-footer">
+        
+              </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+        <div>
+         <a  class="btn btn-primary" href="doctorlogin.php"data-toggle="modal" data-target="#exampleModal1" >Doctor Login</a>
+
+          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body">
+        <form method="POST" action="doctorlogin.php" >
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Username</label>
+            <input type="text" class="form-control"name="username">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Password</label>
+            <input type="password" class="form-control"name="password">
+
+          </div>
+          <input type="submit" name="submit" value="Login" class="btn btn-primary">
+        <!--  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>   -->
+          <a href="doctorregister.php" class="btn btn-primary">Register</a>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+              </div>
+    </div>
+  </div>
+</div>
+
+ </div>
+       
     </div>
 </section>
 
@@ -366,15 +428,15 @@ Covid-19 is different to these two other coronaviruses in that the spectrum of d
 
 
 <!-----------footer------------------------------------------------------------------->
-
-<footer class="mt-5">
-  <div class="footer_style  text-white text-center container-fluid">
+<div class=" container-fluid">
+<footer >
+  <div class="footer_style  text-white text-center">
 
     <p>copyright by @maheshzemse</p>
     
   </div>
 </footer>
-
+</div>
 </body>
 </html>
 
