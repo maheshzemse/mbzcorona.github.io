@@ -4,6 +4,8 @@ include('connection.php');
 
 session_start();
 
+
+$err="";
 $error="";
 
 if(isset($_POST['submit']))
@@ -16,6 +18,7 @@ if(isset($_POST['submit']))
 
 		echo "<script>alert('$error')</script>";
 		header('location:index.html');
+
 	}
 	else
 	{	
@@ -39,8 +42,10 @@ if(isset($_POST['submit']))
 		 }
 		 else
 		 {
-		 	echo"<script>alert('Enter the correct Username & Password')</script>";
+		 		//echo"<script>alert('Enter the correct Username & Password')</script>";
 		 		//header('location:index.html');
+		 	$err="Enter the correct Username & Password";
+
 		 }
 
 		//$row= mysqli_fetch_assoc($data);
@@ -65,7 +70,7 @@ if(isset($_POST['submit']))
 
 
 
-<!--
+
 
 <!DOCTYPE html>
 <html>
@@ -81,10 +86,59 @@ if(isset($_POST['submit']))
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body style="background-color: lightgray">
 
 
 	<div class="container">
+		<div class="card-row mt-5">
+	<div style="background-color:  #a29bfe" class="card ">
+
+		<div class="card-body  ">
+			<button style="margin-left: 40%"  class=" btn btn-success mt-5"data-toggle="modal" data-target="#exampleModal1" > Error shows</button>
+
+			
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+    <div class="modal fade " id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div  class="modal-content  ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<label> <?php  echo $err;            ?>  </label>
+             
+          <a href="index.html" class="btn btn-primary">Back</a>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+              </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--<div class="container">
 		<div class="section_header  m-4 text-primary">
 			<div style="background-color:#a29bfe" class="section_header text-center m-4 ">
   <h1 style="color: white">Patient Login</h1>
@@ -110,12 +164,12 @@ if(isset($_POST['submit']))
    	<input type="submit" name="submit" value="LOGIN" class="btn btn-primary">
 	</form>
 
-</div>
+</div>-->
 
 </body>
 </html>
 
---->
+
 
 
 

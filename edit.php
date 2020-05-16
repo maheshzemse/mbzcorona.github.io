@@ -4,13 +4,15 @@ include('connection.php');
 
 $x=$_SESSION['username'];
 
+
 //$edit=$_GET['edit'];
 $sql="SELECT * FROM patient WHERE username='$x'";
 
 $data=mysqli_query($conn,$sql);
 $result=mysqli_fetch_assoc($data);
+
 $id=$result['id'];
-$username=$result['username'];
+//$username=$result['username'];
 $name=$result['name'];
 $gender=$result['gender'];
 $dob=$result['dob'];
@@ -72,7 +74,7 @@ $address=$result['address'];
       
 <div class="form-group">
     <label >Username</label>
-    <input  type="text"  name="username"class="form-control "  placeholder="Enter the Username" value="<?php echo $x;?>" >
+    <input  type="text"  name="username"class="form-control "  placeholder="Enter the Username" value="<?php echo $x;?>" readonly >
   </div>
   
 
@@ -137,7 +139,7 @@ if(isset($_POST['submit']))
     $naddress=$_POST['address'];
 
 
-  $sql="UPDATE patient SET username='$nusername',name='$nname',gender='$ngender',dob='$ndob',city='$ncity',email='$nemail',mob='$nmob',address='$naddress'  WHERE username='$x'";
+  $sql="UPDATE patient SET name='$nname',gender='$ngender',dob='$ndob',city='$ncity',email='$nemail',mob='$nmob',address='$naddress'  WHERE username='$x'";
 
   $res=mysqli_query($conn,$sql);
 

@@ -28,19 +28,23 @@ if(isset($_POST['submit']))
 		$query="SELECT * FROM doctor WHERE username='$username' and password='$password'";
 
 			$data=mysqli_query($conn,$query);
-		 	$res=mysqli_num_rows($data);
+			$res=mysqli_num_rows($data);
+				    
+
+			
 
 		 if($res==1)
 		 {
 		 	$_SESSION['username']=$username;
-		 	echo"<script>alert('LOGIN SUCCESSFULLY')</script>";
+		 	
+		 echo"<script>alert('LOGIN SUCCESSFULLY')</script>";
 
 		 	header('location:doctordashbord.php');
 		 }
 		 else
 		 {
 		 	echo"<script>alert('Enter the correct Username & Password')</script>";
-		 		header('location:index.html');
+		 		//header('location:index.html');
 		 }
 
 		//$row= mysqli_fetch_assoc($data);

@@ -1,5 +1,7 @@
-<?php
+s<?php
 include('connection.php');
+
+session_start();
 
 
 
@@ -29,10 +31,11 @@ if(isset($_POST['submit']))
 
     $res=mysqli_query($conn,$sql);
 
+    
     if($res)
     {
      //echo "data inserted";
-
+        
       
       echo"<script>alert('Data inserted')</script>";
      header('location:index.html');
@@ -100,7 +103,7 @@ if(isset($_POST['submit']))
 <div class="form-group">
     <label >Specialization</label><br>
   <select name="specialization" class="mdb-select md-form">
-  <option value="" disabled selected></option>
+  <option value="" disabled selected>Select</option>
    <option value="Genral Physician">Genral Physician  </option>
   <option value="Orthopidic">Orthopidic</option>
   <option value="Gynacologist">Gynacologist</option>

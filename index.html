@@ -160,12 +160,36 @@
       </div>
       <div class="modal-footer">
         
-              </div>
+     </div>
     </div>
   </div>
 </div>
 
  </div>
+ <a href="doctorregister.php" class="btn btn-primary"data-toggle="modal" data-target="#exampleModal2">Admin login</a>
+ 
+ <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="admin.php" >
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Username</label>
+            <input type="text" class="form-control"name="username">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Password</label>
+            <input type="password" class="form-control"name="password">
+
+          </div>
+          <input type="submit" name="submit" value="Login" class="btn btn-primary">
+        </form>
        
     </div>
 </section>

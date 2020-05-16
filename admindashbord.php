@@ -1,35 +1,16 @@
 <?php
-
-
-session_start();
-/*
-if(!isset($_SESSION['username']))
-{
-	header('location:index.html');
-}
-*/
 include('connection.php');
+session_start();
 
-$sql= "SELECT * FROM patient";
-		$res=mysqli_query($conn,$sql);
-		$row=mysqli_fetch_assoc($res);
-		$n=mysqli_num_rows($res);
-	
+//$_SESSION['username']=$u;
 
-		/*if($n==0)
-		{
-			echo"<script>alert('No records to display')</script>";
-		}
-		else
-			{
-				echo "";
 
-			}
 
-*/
+
+
+
 
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -89,104 +70,42 @@ $sql= "SELECT * FROM patient";
 </nav>
 <br><br>
 
-
-<!--------start main header------------------>
-
-<div class="main_header">
-  <div class="row w-100 h-100">
-    <div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2">
-      <div class="leftside w-100 h-100 d-flex justify-content-center align-items-center">
-        <img src="left.png" width="300" height="300">
-      </div>
-      
-      </div>
-
-    <div class="col-lg-7 col-md-7 col-12 order-lg-2 order-1">
-
-      <div class="rightside text-capitalize leftside w-100 h-100 d-flex justify-content-center align-items-center">
-        <h1>Lets stay safe & fight together against COR<span class="corona_r"><img  src="right.png " width="70px height70px"></span>NA virus</h1>
-      </div>
-      </div>
-
-  </div>
-</div>
 <!--------------------------start mydashbord----------------------------->
 
 
-<div class="container">
+<div class="container mt-4">
 	
-	<h1 class="text-center text-success">My Dashbord</h1>
+	<h1 class="text-center text-success">Admin Dashbord</h1>
 	
-	<div class="card-columns ">
+	<div class="card-row ">
  
 		<div style="background-color:  #a29bfe" class="card ">
 		<div class="card-body text-center">
-			<h1 class="card-text">My Profile</h1 >
-			<a href="edit.php?edit=<?php echo  $row['id'];?>" class="btn btn-success mt-4">Edit Profile</a>
+			<h1 class="card-text">Patients Details</h1 >
+			<a href="adminviewpatient.php" class="btn btn-success mt-4">View Patient Details</a>
 		</div>
 		</div>
+		<br>
 
 		<div style="background-color:  #a29bfe" class="card ">
 		<div class="card-body text-center">
-			<h1 class="card-text">My Appoinment </h1>
+			<h1 class="card-text">Appointment Details </h1>
 
-			<a href="appoinment.php"class="btn btn-success mt-4">Book new Appoinment</a>
+			<a href="viewpatient.php"class="btn btn-success mt-4">View Appointment Details</a>
 		</div>
 		</div>
+		<br>
 
 		<div style="background-color:  #a29bfe" class="card ">
 		<div class="card-body text-center">
-			<h1 class="card-text">My Appoinment</h1>
-			<a href="view.php"class="btn btn-success mt-4">View Appoinments</a>
+			<h1 class="card-text">Doctors Details </h1>
+
+			<a href="adminviewdoctor.php"class="btn btn-success mt-4">View Doctors Details</a>
 		</div>
 		</div>
-</div>
-
-</div>
-</div>
-
-<div class="container">
-<div class="card-row ">
-
-<div style="background-color:  #a29bfe" class="card ">
-		<div class="card-body text-center">
-			<h1 class="card-text">Find A Doctor</h1>
-
-			<form method="POST" action="search.php" >
-
-			<div class="form-group">
-				<label class="text-center">Category</label><br>
- 			 <select name="specialization" class="mdb-select md-form">
- 			 	<option value="" disabled selected>Select</option>
-  				<option value="Genral Physician">Genral Physician	</option>
- 				<option value="Orthopidic">Orthopidic</option>
- 			 	<option value="Gynacologist">Gynacologist</option>
- 			 	<option value="ENT Specialist">ENT Specialist</option>
-			  	<option value="Pediatrics">Pediatrics</option>
-			 </select>
-			</div>
-
-				<input type="submit" name="submit" class="btn btn-success" value="Find">
-
-
-			</form>
-
-			</div>
-		
-			</div>	
-</div>
-</div>
 
 
 
-<footer class="mt-5">
-  <div class="footer_style  text-white text-center container-fluid">
-
-    <p>copyright by @maheshzemse</p>
-    
-  </div>
-</footer>
 
 
-</body>
-</html>
+

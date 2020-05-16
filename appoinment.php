@@ -85,7 +85,7 @@ $sql="INSERT INTO appointment (username,date,timeslot,specialization) VALUES('$u
 
 			<div class="form-group">
     <label >Category</label><br>
-  <select name="specialization" class="mdb-select md-form">
+  <select name="specialization"class="mdb-select md-form"  >
   <option value="" disabled selected></option>
   <option value="Genral Physician">Genral Physician	</option>
   <option value="Orthopidic">Orthopidic</option>

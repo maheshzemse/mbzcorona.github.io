@@ -1,11 +1,11 @@
 <?php
-include('connection.php');
 session_start();
 
-$x=$_SESSION['username'];
+include('connection.php');
 
 
-$sql= "SELECT * FROM appointment where username='$x' ";
+$sql="SELECT * FROM appointment ";
+
 		$res=mysqli_query($conn,$sql);
 		
 		$n=mysqli_num_rows($res);
@@ -19,19 +19,13 @@ $sql= "SELECT * FROM appointment where username='$x' ";
 				echo "";
 
 			}
-
-
-
-
-
-
-?>
+			?>
 
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>view</title>
+	<title>Viewpatient</title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -40,21 +34,21 @@ $sql= "SELECT * FROM appointment where username='$x' ";
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+ 
 
 </head>
-<body style="background-color: lightgray"  >
+<body style="background-color: lightgray">
 
 	<div class="container">
-		<a style="float: left;" href="dashbord.php" class="btn btn-primary mt-4">Back</a>
-		<a style="float: right;" href="logout.php" class="btn btn-primary mt-4">Logout</a><br>
-		<table class="table mt-5 text-center table-bordered table-hover" >
+
+	<table class="table mt-5 text-center table-bordered table-hover" >
 		<thead>
 			<tr>
-				<th  scope="col">Username </th>
-				<th  scope="col">Date </th>
-				<th  scope="col">Time Slot </th>
+				<th  scope="col">username </th>
+				<th  scope="col">date </th>
+				<th  scope="col">timeslot </th>
 				<th  scope="col">specialization </th>
-				<th  scope="col">Cancle Appointment </th>
 
 			</tr>
 		</thead>
@@ -70,7 +64,7 @@ $sql= "SELECT * FROM appointment where username='$x' ";
 						<td><?php echo $row['date']; ?></td>
 						<td><?php echo $row['timeslot']; ?></td>
 						<td><?php echo $row['specialization']; ?></td>
-						<td><a href="cancle.php ?tid= <?php echo $row['id'] ?>">Cancle</a></td>
+						
 
 				<?php
 
@@ -79,11 +73,45 @@ $sql= "SELECT * FROM appointment where username='$x' ";
 				?>
 
 
-		</table>
-	
-		</div>
+
+
+
+
+
+
+
+
+
+
+	</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
-
-
