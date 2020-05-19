@@ -1,480 +1,384 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>corona</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!--<link rel="stylesheet" type="text/css" href="connection.php">   -->
-  <link rel="stylesheet" type="text/css" href="form.php">
-
-
+	<title>Portfolio</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
  
+  
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+	.font-div
+	{
+	width: 30%;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+
+	
+</style>
+
+
 
 
 </head>
 <body>
-
-
-   <nav class="navbar navbar-expand-lg nav_style fixed-top text-center">
-  <a class="navbar-brand pl-5" href="#">covid-19</a>
-  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
- 
-    
-  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto pr-5 text-capitalize">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#aboutid">about</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#symtoms">Symtoms</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#prevention">Prevention</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="IndiaCoronaLive.php">IndiaCoronaLive</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
-<!--------start main header------------------>
-
-
-
-<div class="main_header">
-  <div class="row w-100 h-100">
-    <div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2">
-      <div class="leftside w-100 h-100 d-flex justify-content-center align-items-center">
-        <img src="left.png" width="300" height="300">
-      </div>
-      
-      </div>
-
-    <div class="col-lg-7 col-md-7 col-12 order-lg-2 order-1">
-      <div class="rightside text-capitalize leftside w-100 h-100 d-flex justify-content-center align-items-center">
-        <h1>Lets stay safe & fight together against COR<span class="corona_r"><img  src="right.png " width="70px height70px"></span>NA virus</h1>
-      </div>
-      </div>
-
-  </div>
-</div>
-<!--------End main header------------------>
-
-
-<!--******************************corona updates************---->
-
-
-<section class="register">
-
-  <div class="mb-3 ">
-    <h3 class="text-uppercase text-center">Registration</h3>
-  </div>
-
-    <div class=" d-flex justify-content-around align-items-center mt-5 mb-4 ">
-      
-        <!--<div>
-        <a  class="btn btn-primary" href="register.php" >1.Patient Registration</a>-->
-        
-        <div>
-
-
-        <a  class="btn btn-primary" href="login.php" data-toggle="modal" data-target="#exampleModal" >Patient Login</a>
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title " id="exampleModalLabel">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="POST" action="login.php" >
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Username</label>
-            <input type="text" class="form-control"name="username">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Password</label>
-            <input type="password" class="form-control"name="password">
-
-          </div>
-          <input type="submit" name="submit" value="Login" class="btn btn-primary">
-          <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-          <a href="register.php" class="btn btn-primary">Register</a>
-        </form>
-      </div>
-      <div class="modal-footer">
-        
-              </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-        <div>
-         <a  class="btn btn-primary" href="doctorlogin.php"data-toggle="modal" data-target="#exampleModal1" >Doctor Login</a>
-
-          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="POST" action="doctorlogin.php" >
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Username</label>
-            <input type="text" class="form-control"name="username">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Password</label>
-            <input type="password" class="form-control"name="password">
-
-          </div>
-          <input type="submit" name="submit" value="Login" class="btn btn-primary">
-        <!--  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>   -->
-          <a href="doctorregister.php" class="btn btn-primary">Register</a>
-        </form>
-      </div>
-      <div class="modal-footer">
-        
-     </div>
-    </div>
-  </div>
-</div>
-
- </div>
- <a href="doctorregister.php" class="btn btn-primary"data-toggle="modal" data-target="#exampleModal2">Admin login</a>
- 
- <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="POST" action="admin.php" >
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Username</label>
-            <input type="text" class="form-control"name="username">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Password</label>
-            <input type="password" class="form-control"name="password">
-
-          </div>
-          <input type="submit" name="submit" value="Login" class="btn btn-primary">
-        </form>
-       
-    </div>
-</section>
-
-
-
-
-
-
-<!--****************about section****************-->
-
-<div class="container sub_section  pt-5 pb-5 " id="aboutid" >
-  <div class="section_header text-center mb-5 mt-5 pt-5">
-
-    <h1>About Covid-19  </h1>
-  </div>
-    <div class="row pt-5">
-      <div class="col-lg-5 col-md-4 col-12 ">
-        <img src="aboutcorona.jpg" class="img-fluid">
-     </div>
-
-     <div class="col-lg-6 col-md-4 col-12">
-        <h2 > What is Covid-19 (corona Virus)</h2>
-        <p class="text-justify">Coronaviruses are a family of viruses that cause disease in animals. Seven, including the new virus, have made the jump to humans, but most just cause cold-like symptoms.
-
-Covid-19 is closely related to severe acute respiratory syndrome (Sars) which swept around the world in 2002 to 2003. That virus infected around 8,000 people and killed about 800 but it soon ran itself out, largely because most of those infected were seriously ill so it was easier to control.
-
-Another coronavirus is Middle East respiratory syndrome (Mers), cases of which have been occurring sporadically since it first emerged in 2012 - there have been around 2,500 cases and nearly 900 deaths. 
-
-Covid-19 is different to these two other coronaviruses in that the spectrum of disease is broad, with around 80 per cent of cases leading to a mild infection. 
-</p>
-     </div>
-    </div>
-  </div>
-</div>
-
-
-<!--//////////////////corona symtoms///////////////////--->
-
-
-
-<div class="container-fluid pt-5 pb-5 " id="symtoms" >
-  <div class="section_header text-center mb-5 mt-5 pt-5">
-
-    <h1> Corona virus Symtoms </h1>
-  </div>
-
-  <div class="container">
-    <div class="row ">
-      <div class="col-lg-4 col-md-4 col-12 mt-4">
-        <figure class="text-center">
-        <img src="cough.jpg" class="img-fluid" width="120" height="120">
-        <figcaption>COUGH</figcaption>
-        </figure>
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-12 mt-4">
-        <figure class="text-center">
-        <img src="nose.jpg" class="img-fluid" width="90" height="40">
-        <figcaption>RUNNY NOSE</figcaption>
-        </figure>
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-12 mt-4 ">
-        <figure class="text-center">-
-        <img src="fever.jpg" class="img-fluid" width="60" height="40">
-        <figcaption>FEVER</figcaption>
-        </figure>
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-12 mt-4">
-        <figure class="text-center">
-        <img src="cold.jpg" class="img-fluid" width="120" height="120">
-        <figcaption>COLD</figcaption>
-        </figure>
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-12 mt-4">
-        <figure class="text-center">
-        <img src="tiredness.jpg" class="img-fluid" width="120" height="120">
-        <figcaption>TIREDNESS</figcaption>
-        </figure>
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-12 mt-4">
-        <figure class="text-center">
-        <img src="breath.jpg" class="img-fluid" width="120" height="120">
-        <figcaption>DIFFICULTY IN BREATHING</figcaption>
-        </figure>
-      </div>
-   </div>
-  </div>
-</div>
-
-
-
-
-<!---**************6 Steps Prevention Against Coronavirus*******************---->
-
-<div class="container-fluid sub_section pt-5 pb-5 " id="prevention" >
-  <div class="section_header text-center mb-5 mt-5 pt-5">
-
-    <h1> 6 Steps Prevention Against Coronavirus </h1>
-
-  </div>
-
-  <div class="container">
-    <div class="row">
-
-      <div class="col-lg-4 col-md-4 col-12 mt-5">
-
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-12">
-            <figure class="text-center">
-              <img src="hadwash.jpg" class="img-fluid" width="90" height="90">
-             </figure>
-           </div>
-                 <div class="col-lg-8 col-md-4 col-12">
-                   <p>
-                      Wash your hands regularly for 20 seconds,with soap and water.
-                   </p>
-                  </div>
-                </div>
-        </div>
-
-
-         <div class="col-lg-4 col-md-4 col-12 mt-5">
-
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-12">
-            <figure class="text-center">
-              <img src="mask.jpg" class="img-fluid" width="90" height="90">
-             </figure>
-           </div>
-                 <div class="col-lg-8 col-md-4 col-12">
-                   <p>
-                    Cover your nose and mouth with diposible tissue or fixed elbow when you cough or sneeze
-                   </p>
-                  </div>
-                </div>
-        </div>
-     
-
-      <div class="col-lg-4 col-md-4 col-12 mt-5">
-
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-12">
-            <figure class="text-center">
-              <img src="close.jpg" class="img-fluid" width="90" height="90">
-             </figure>
-           </div>
-                 <div class="col-lg-8 col-md-4 col-12">
-                   <p>
-                      Avoid close contact(1 meter)with the people who are unwell.
-                   </p>
-                  </div>
-                </div>
-        </div>
-     
-
-      <div class="col-lg-4 col-md-4 col-12 mt-5">
-
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-12">
-            <figure class="text-center">
-              <img src="home.jpg" class="img-fluid" width="90" height="90">
-             </figure>
-           </div>
-                 <div class="col-lg-8 col-md-4 col-12">
-                   <p>
-                      stay at home and self-isolate from others in the household if you fell unwell
-                    </p>
-                  </div>
-                </div>
-        </div>
-     
-
-      <div class="col-lg-4 col-md-4 col-12 mt-5">
-
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-12">
-            <figure class="text-center">
-              <img src="news.jpg" class="img-fluid" width="50" height="90">
-             </figure>
-           </div>
-                 <div class="col-lg-8 col-md-4 col-12">
-                   <p>
-                      Stay informed by watching news and follow the recommended practices
-                   </p>
-                  </div>
-                </div>
-        </div>
-     
-
-      <div class="col-lg-4 col-md-4 col-12 mt-5">
-
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-12">
-            <figure class="text-center">
-              <img src="fever1.jpg" class="img-fluid" width="90" height="90">
-             </figure>
-           </div>
-                 <div class="col-lg-8 col-md-4 col-12">
-                   <p>
-                      If you have fever,cough and difficult breathing,seek medical care early
-                   </p>
-                  </div>
-                </div>
-        </div>
-      </div>
-    </div>
-
-</div>
-
-
-
- <!------------Contact us-------------------------------------------------------------------------------->
-  
-
-<div class="container-fluid pt-5 pb-5 " id="contact" >
-  <div class="section_header text-center mb-5 mt-5 pt-5">
-     <h1> Contact Us</h1>
- </div>
+	<header>
+
+		<div class="container">
+
+			<div class="row no-gutters">
+
+				<div class="col-lg-4 col-md-4 col-12">
+					<img src="1.jpg" style="height: 331px" >
+					
+				</div>
+
+				<div class="col-lg-8 col-md-8 col-12">
+					<div class="d-flex flex-column">
+						<div class="p-5 bg-dark text-white">
+							<div class="d-flex flex-row justify-content-between align-items-center">
+								<h1 class="display-4">Mahesh Zemse</h1>
+							<a href="https://www.facebook.com/mahesh.zemse.3"><i class="fa fa-facebook text-light"></i></a>
+							<a href="#"><i class="fa fa-google-plus text-light"></i></a>
+							<a href="#"><i class="fa fa-linkedin text-light"></i></a>
+							
+								
+							</div>
+							
+						</div>
+
+						<div class="p-3 text-white" style="background-color: black">
+							Mob No: 9975863133 / 8087780445    <span style="float: right;">mahesh.zemse@gmail.com</span>
+							
+						</div>
+
+						<div class=" no-gutters ">
+						<div class="d-flex flex-row text-center text-white">
+							
+
+							<div class="p-4	 bg-success font-div"data-toggle="collapse" data-target="#home">
+								<a href="#" style="text-decoration: none;color: white"><i class="fa fa-home fa-2x d-block text-light" ></i>Home </a>
+								
+							</div>
+							<div style="background-color: #a29bfe" class="pt-4 pr-1 font-div">
+								<a href="#" style="text-decoration: none;color: white"><i class="fa fa-envelope fa-2x d-block"data-toggle="collapse"data-target="#education" ></i>Education</a>
+								
+							</div>
+
+							<div class="pt-4 pr-1 bg-danger font-div"data-toggle="collapse" data-target="#resume" >
+								<a href="#" style="text-decoration: none;color: white"><i class="fa fa-graduation-cap fa-2x d-block" ></i>Experience</a>
+								
+							</div>
+							<div class="pt-4 bg-primary font-div">
+								<a href="#" style="text-decoration: none;color: white"><i class="fa fa-folder fa-2x d-block"data-toggle="collapse" data-target="#work" ></i>Work</a>
+								
+							</div>
+							<div class="pt-4 bg-warning font-div">
+								<a href="#" style="text-decoration: none;color: white"><i class="fa fa-envelope fa-2x d-block"data-toggle="collapse"data-target="#contact" ></i>Contact</a>
+								
+							</div>
+						</div>
+
+						</div>
+
+						
+					</div>
+					
+				</div>
+				
+				
+			</div>
+			
+		</div>
+</header>
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2 lg-12">
 
-      <form method="POST" action="form.php">
+	<div class="collapse" id="home">
+		<div class="p-5 text-white bg-success">
+			<h2>Technical Skills</h2>
+		</div>
 
-  <div class="form-group">
-    <label >UserName</label>
-    <input type="text"  name="username"class="form-control"  placeholder="Enter the Full Name" autocomplete="off" required>
-  </div>
+		<div class="card card-body">
+			<h1 class="text-success">Skills</h1>
 
-   <div class="form-group">
-    <label >Mobile No</label>
-    <input type="Number"  name="mob"class="form-control"  placeholder="Enter Mobile Number" autocomplete="off" required>
-  </div>
+			<h4>HTML</h4>
+			<div class="progress mb-4">
+				<div class="progress-bar progress-bar-striped progress-bar animated" style="width: 100%">
+					
+				</div>
+				
+			</div>
+			<h4>CSS</h4>
+			<div class="progress mb-4">
+				<div class="progress-bar progress-bar-striped progress-bar animated" style="width: 90%">
+					
+				</div>
+				
+			</div>
+			<h4>Bootstrap</>
+			<div class="progress mb-4">
+				<div class="progress-bar progress-bar-striped progress-bar animated" style="width: 90%">
+					
+				</div>
+				
+			</div>
+			<h4>Javascript</h4>
+			<div class="progress mb-4">
+				<div class="progress-bar progress-bar-striped progress-bar animated" style="width: 70%">
+					
+				</div>
+				
+			</div>
+			<h4>PHP</>
+			<div class="progress mb-4">
+				<div class="progress-bar progress-bar-striped progress-bar animated" style="width: 80%">
+					
+				</div>
+			</div>
 
-  <div class="form-group">
-    <label >Email</label>
-    <input type="email"  name="email"class="form-control"  placeholder="Enter the Email Id" autocomplete="off" required>
-  </div>
-
- 
-  <div class="form-group">
-    <label >Comment</label>
-    <textarea class="form-control" name="textarea"rows="3"></textarea>
-  </div>
-
-  <input type="submit" name="submit" value="submit" class="btn btn-primary">
-
-</form>
+		</div>
 </div>
-    </div>
+
+<div class="collapse" id="education">
+	<div style="background-color: #a29bfe" class="p-5 text-white ">
+			<h2>Education</h2>
+		</div>
+
+			<div class="card card-body">
+				
+
+				<div class="card-deck text-center">
+					<div class="card">
+						<div class="card-header text-uppercase font-weight-bold">
+							MTech(Computer)
+							
+						</div>
+						<div class="card-body">
+							<p class="mb-5">Patel College Of Science & Technology,Indore.
+							<p style="background-color: #a29bfe" class=" text text-white">
+								RGPV University
+							</p>
+						</div>
+
+						<div class="card-footer"> 2012-2015
+							
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header text-uppercase font-weight-bold">
+							BE(Computer)
+							
+						</div>
+						<div class="card-body">
+							<p class="mb-5">MGM College Of Engineering & Technology,Navi Mumbai.
+							<p style="background-color: #a29bfe"class=" text text-white">
+								Mumbai University
+							</p>
+							
+						</div>
+
+						<div class="card-footer"> 2005-2009
+							
+						</div>
+					</div>
+
+</div>
+
 </div>
 </div>
 
 
+<div class="collapse" id="resume">
+	<div class="p-5 text-white bg-danger">
+			<h2>Experience: 09Years(1+Developing)</h2>
+		</div>
 
-<!-----------footer------------------------------------------------------------------->
-<div class=" container-fluid">
-<footer >
-  <div class="footer_style  text-white text-center">
+			<div class="card card-body">
+				<h2>Where I worked?	</h2>
 
-    <p>copyright by @maheshzemse</p>
-    
-  </div>
+				<div class="card-deck text-center">
+					<div class="card">
+						<div class="card-header text-uppercase font-weight-bold">
+							Yadavrao TasgaonkarCollege of Engineering & Technology,Bhivpuri.
+							
+						</div>
+						<div class="card-body">
+							<p class="mb-5">Subject Tought:<br>BDA,DBMS,DWM</p>
+							<p class="bg-danger text text-white">
+								As a Assistant Professor
+							</p>
+						</div>
+
+						<div class="card-footer">2010-2015
+							
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header text-uppercase font-weight-bold">
+							Konkan Gyanpeeth College Of Engineering & Technology,Karjat
+							
+						</div>
+						<div class="card-body">
+							<p class="mb-5">Subject Tought:<br>BDA,C,C++,DWM </p>
+							<p class="bg-danger text text-white">
+								As a Assistant Professor
+							</p>
+							
+						</div>
+
+						<div class="card-footer">2015-2020
+							
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-header text-uppercase font-weight-bold">
+							Itvedant <br>Education <br>pvt.ltd
+							
+						</div>
+						<div class="card-body">
+							<p class="mb-5">Completed PHP Course </p><br>
+							<p class="bg-danger text text-white">
+								HTML5,BootStrap,JavaScript,PHP,Mysql
+							</p>
+							
+						</div>
+
+						<div class="card-footer">2020 
+							
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+</div>
+
+
+<div class="collapse" id="work">
+	<div class="p-5 text-white bg-primary">
+			<h2>My Works</h2>
+		</div>
+		<div class="card card-body">
+			<h2>What I have built?</h2>
+			<p>Built todo List and Corona(covid-19)website</p>
+			<p>Website:<a href="https://maheshzemse.github.io/mbzcorona.github.io/" target="_blank">Corona(Covid-19)</a></p>
+
+			<div class="row no-gutters">
+				<div class="col-lg-4 col-md-4"><img src="1.png">  </div>
+				<div class="col-lg-4 col-md-4"><img src="2.png">  </div>
+				<div class="col-lg-4 col-md-4"><img src="3.png">  </div>
+				<div class="col-lg-4 col-md-4"><img src="4.png">  </div>
+				<div class="col-lg-4 col-md-4"><img src="5.png">  </div>
+				<div class="col-lg-4 col-md-4"><img src="6.png">  </div>
+			</div>
+		</div>
+</div>
+
+
+
+<div class="collapse" id="contact">
+	<div class="p-5 text-white bg-warning">
+			<h2>Contact Me</h2>
+			<p>205,B-Wing,Blue heaven building,Sukapur,Panvel.</p>
+		</div>
+		<div class="card card-body">
+			<div class="row justify-content-between  no-gutters">
+				<div class="col-lg-8 col-md-8 col-12">
+					<form>
+						<label class="ml-5">Name</label>
+						<div class="form-group" >
+							<input type="text" name="name" class="form-control bg-dark text-white p-3 ml-4" placeholder="Enter the Name">
+								
+							</div>
+							<label class="ml-5">Email</label>
+							<div class="form-group">
+							
+							<input type="email" name="email" class="form-control bg-dark text-white p-3 ml-4" placeholder="Enter the email">
+								
+							</div>
+							<label class="ml-5">Mobile</label>
+							<div class="form-group">
+							
+					<input type="number" name="mob" class="form-control bg-dark text-white p-3 ml-4" placeholder="Enter the Mobile Number">
+						</div>
+
+							<div class="form-group">
+							<input type="submit" name="submit" class="btn btn-primary ml-5" value="Send" >
+								
+							</div>
+			
+			
+							
+						</div>
+
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="container">
+<footer class="p-5 bg-dark text-center ">
+	<a href="Mahesh Zemse.pdf" download >
+	<button class="btn bg-light">   <i class="fa fa-download fa-2x" ></i>Download
+	</button>
+	
 </footer>
 </div>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  	
+  	<script type="text/javascript">
+  		
+  		$('.font-div').click(function(){
+  			$('.collapse').collapse('hide');
+  		});
+
+
+  	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 </body>
 </html>
-
-
-
-
-
-
-
-
-
 
 
 
